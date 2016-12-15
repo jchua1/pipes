@@ -10,9 +10,9 @@ void process( char * s );
 int main() {
 
   int to_client, from_client;
-  char buffer[MESSAGE_BUFFER_SIZE];
+  char buffer[100];
   
-  to_client = server_handshake( &from_client );
+  //to_client = server_handshake( &from_client );
 
   read( from_client, buffer, sizeof(buffer) );
   process( buffer );
